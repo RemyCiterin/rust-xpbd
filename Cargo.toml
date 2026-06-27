@@ -4,5 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+pprof = { version = "0.15", features = ["flamegraph"] }
+lazy_static = "*"
 rayon = "*"
 sdl2 = "*"
+
+# [profile.release]
+# debug = "line-tables-only"
+#
+# [build]
+# rustflags = ["-C", "force-frame-pointers=yes"]
